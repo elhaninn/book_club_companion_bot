@@ -2,7 +2,7 @@ from transformers import LlamaForCausalLM, LlamaTokenizer
 
 # Load pre-trained LLaMA model and tokenizer
 def load_llama_model():
-    model_name = "your-llama-model"  # Replace with actual LLaMA model name
+    model_name = "meta-llama/Llama-3.2-1B"  
     model = LlamaForCausalLM.from_pretrained(model_name)
     tokenizer = LlamaTokenizer.from_pretrained(model_name)
     return model, tokenizer
